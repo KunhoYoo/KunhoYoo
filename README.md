@@ -3,9 +3,9 @@
 ### "make steady progress toward one's goal"<br>
 
 
-**<Samsung OpenSource Companions 1st, 2nd>**<br>
+**<Samsung OpenSource Companions 1st, 2nd / 2020~2021>**<br>
   https://opensource.samsung.com/community/companions/companionsMemberList# <br><br>
-  **<Dreamin iOS 1st>** <br>
+  **<Dreamin iOS 1st / 2020>** <br>
   http://codershigh.dscloud.biz/dreamin-completion/#/certifications/13 <br>
   https://github.com/ProjectInTheClass/zipCheck <br>
 

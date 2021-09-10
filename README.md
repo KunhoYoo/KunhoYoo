@@ -7,7 +7,7 @@
   https://opensource.samsung.com/community/companions/companionsMemberList# <br><br>
   **<Dreamin iOS 1st / 2020>** <br>
   http://codershigh.dscloud.biz/dreamin-completion/#/certifications/13 <br>
-  https://github.com/ProjectInTheClass/zipCheck <br>
+  https://github.com/KunhoYoo/zipCheck <br>
 
 
 

@@ -1,0 +1,43 @@
+name: Publish cinematic tribute to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'chef-kim-jungyu-credits/**'
+      - '.github/workflows/deploy-tribute-pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Prepare static files
+        shell: bash
+        run: |
+          mkdir -p _site/chef-kim-jungyu-credits
+          cp chef-kim-jungyu-credits/index.html _site/chef-kim-jungyu-credits/index.html
+          touch _site/.nojekyll
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

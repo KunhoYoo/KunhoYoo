@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#070609">
+<meta name="description" content="이재운 셰프, 김준규 셰프, 건화 형님, 태준 형님에게 바치는 시네마틱 엔딩 크레딧.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="THE FINAL CREDIT — 네 분께 바치는 헌사">
+<meta property="og:description" content="오늘부로 지지를 철회한다. 이제 우리는 한 몸이 된다.">
+<title>THE FINAL CREDIT | 이재운 · 김준규 · 건화 · 태준</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root { color-scheme:dark; --gold:#e9c68e; --white:#f5f0e9; --muted:#a89c8f; --edge:rgba(225,193,141,.2); --ink:#070609; }
+* { box-sizing:border-box; }
+html { -webkit-text-size-adjust:100%; }
+html,body { margin:0; min-height:100%; background:var(--ink); color:var(--white); font-family:"DM Sans",system-ui,-apple-system,"Noto Sans KR",sans-serif; }
+body { height:100dvh; overflow:hidden; overscroll-behavior:none; }
+button { font:inherit; }
+button:focus-visible { outline:2px solid var(--gold); outline-offset:4px; }
+::selection { background:#c7a16b; color:#100c08; }
+.screen { position:fixed; inset:0; isolation:isolate; overflow:hidden; background:radial-gradient(ellipse 50% 43% at 52% 48%,#201923 0%,#0c0a0e 55%,#040405 100%); }
+.screen::before { content:""; position:absolute; inset:-50%; pointer-events:none; z-index:1; background:conic-gradient(from 65deg at 50% 50%,transparent 0deg,rgba(195,141,72,.065) 55deg,transparent 115deg,transparent 225deg,rgba(195,141,72,.035) 270deg,transparent 315deg); animation:turn 38s linear infinite; }
+.screen::after { content:""; position:absolute; inset:0; pointer-events:none; z-index:12; background:radial-gradient(ellipse 64% 66% at center,transparent 25%,rgba(0,0,0,.12) 67%,rgba(0,0,0,.8) 130%); }
+@keyframes turn { to { transform:rotate(360deg); } }
+.stars { position:absolute; inset:0; pointer-events:none; z-index:2; background-image:radial-gradient(1px 1px at 13% 21%,#fde1af 98%,transparent),radial-gradient(1px 1px at 79% 14%,#fff6db 98%,transparent),radial-gradient(1px 1px at 58% 81%,#fde1af 98%,transparent),radial-gradient(1px 1px at 92% 66%,#fff6db 98%,transparent),radial-gradient(1px 1px at 38% 57%,#fff6db 98%,transparent),radial-gradient(1px 1px at 21% 86%,#fde1af 98%,transparent); background-size:350px 380px; opacity:.37; animation:shimmer 10s ease-in-out infinite alternate; }
+@keyframes shimmer { to { opacity:.12; transform:scale(1.04); } }
+.grain { position:absolute; inset:-80%; z-index:15; pointer-events:none; opacity:.115; mix-blend-mode:screen; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='.6'/%3E%3C/svg%3E"); animation:grain .2s steps(2) infinite; }
+@keyframes grain { 0%{transform:translate(0,0)}25%{transform:translate(-1%,1%)}50%{transform:translate(1%,-1%)}75%{transform:translate(-1%,0)} }
+.edge { position:absolute; top:0; bottom:0; left:0; width:27px; border-right:1px solid var(--edge); z-index:15; opacity:.3; background:repeating-linear-gradient(to bottom,transparent 0 18px,rgba(244,223,187,.38) 19px 31px,transparent 32px 54px); }
+.edge.right { left:auto; right:0; transform:scaleX(-1); }
+.outline { position:absolute; inset:33px 48px; z-index:16; border:1px solid rgba(234,195,132,.12); pointer-events:none; }
+.outline::before,.outline::after { content:""; width:29px; height:29px; position:absolute; border-color:rgba(240,200,132,.68); border-style:solid; }
+.outline::before { top:-1px; left:-1px; border-width:1px 0 0 1px; }
+.outline::after { bottom:-1px; right:-1px; border-width:0 1px 1px 0; }
+.header,.footer { position:absolute; z-index:20; left:0; right:0; display:flex; justify-content:space-between; align-items:center; gap:12px; pointer-events:none; padding-inline:clamp(60px,7vw,100px); }
+.header { top:44px; }.footer { bottom:92px; }
+.micro { text-transform:uppercase; font-weight:700; font-size:9px; line-height:1.7; letter-spacing:.29em; color:rgba(241,211,165,.67); }
+.micro strong { color:var(--gold); font-weight:700; }.micro.right { text-align:right; }
+.intro,.finale { position:absolute; inset:0; display:grid; place-items:center; padding:105px 42px 135px; text-align:center; z-index:9; transition:opacity 1.4s ease,transform 1.5s ease; }
+.intro h1 { margin:0; font-family:"Noto Serif KR",serif; font-weight:500; font-size:clamp(38px,7.2vw,95px); line-height:1.3; letter-spacing:-.07em; text-wrap:balance; }
+.intro h1 em { font-style:normal; background:linear-gradient(115deg,#b88955,#fff0c5 50%,#b98b53); background-clip:text; -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+.intro .eyebrow,.finale .eyebrow { color:var(--gold); font-weight:700; letter-spacing:.5em; font-size:clamp(9px,1vw,12px); margin:0 0 31px; }
+.intro .cast { margin:28px auto 0; max-width:730px; color:rgba(249,238,221,.77); font-family:"Noto Serif KR",serif; font-weight:500; font-size:clamp(13px,1.8vw,20px); line-height:2; word-break:keep-all; }
+.intro .subtitle,.finale .subtitle { color:var(--muted); letter-spacing:.27em; font-size:11px; margin:30px 0 0; }
+.ornament { width:1px; height:55px; margin:35px auto 0; background:linear-gradient(var(--gold),transparent); }
+.intro .eyebrow { animation:rise 1.2s both; }.intro h1 { animation:rise 1.5s .2s both; }.intro .cast { animation:rise 1.8s .45s both; }.intro .subtitle { animation:rise 2s .6s both; }
+@keyframes rise { from { opacity:0; transform:translateY(24px); filter:blur(7px); } to { opacity:1; transform:translateY(0); filter:blur(0); } }
+.intro.hide { opacity:0; transform:scale(1.06); pointer-events:none; }
+.credits { position:absolute; inset:0; overflow:hidden; z-index:7; pointer-events:none; mask-image:linear-gradient(to bottom,transparent 0%,black 17%,black 78%,transparent 100%); -webkit-mask-image:linear-gradient(to bottom,transparent 0%,black 17%,black 78%,transparent 100%); }
+.roll { position:absolute; width:min(84vw,850px); left:50%; top:0; text-align:center; will-change:transform; transform:translate3d(-50%,100vh,0); }
+.block { padding:clamp(50px,7.5vh,90px) 4px; }
+.label { margin:0 0 34px; font-size:10px; font-weight:700; letter-spacing:.53em; color:var(--gold); }
+.prose { margin:0; font-family:"Noto Serif KR",serif; font-size:clamp(16px,2.35vw,27px); font-weight:500; line-height:2.15; letter-spacing:-.04em; white-space:pre-line; word-break:keep-all; overflow-wrap:anywhere; }
+.block.opening .prose { color:var(--gold); font-size:clamp(25px,4.6vw,53px); font-weight:700; line-height:1.75; }
+.block.declaration .prose { font-size:clamp(19px,3.2vw,37px); line-height:2.05; }
+.block.fans .prose { font-size:clamp(16px,2.1vw,24px); line-height:2.4; }
+.block.devotion .prose { color:var(--gold); font-size:clamp(20px,3.2vw,39px); line-height:2.28; }
+.divider { height:1px; width:75px; margin:0 auto; background:linear-gradient(90deg,transparent,var(--gold),transparent); opacity:.6; }
+.finale { opacity:0; pointer-events:none; transform:scale(.94); }
+.finale.show { opacity:1; pointer-events:auto; transform:scale(1); }
+.finale .the-end { font-family:Georgia,serif; font-size:clamp(27px,5vw,60px); letter-spacing:.3em; margin:0 0 30px; }
+.finale h2 { margin:0; font-family:"Noto Serif KR",serif; font-weight:700; font-size:clamp(31px,5.2vw,66px); line-height:1.65; letter-spacing:-.04em; background:linear-gradient(110deg,#be9461,#fff1ce 50%,#ba8e58); background-clip:text; -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+.finale .end-line { margin-top:12px; font-family:"Noto Serif KR",serif; font-size:clamp(25px,4vw,48px); color:var(--gold); }
+.finale .btns { display:flex; justify-content:center; gap:12px; flex-wrap:wrap; margin-top:36px; }
+.btn { min-height:44px; padding:11px 18px; border:1px solid rgba(233,198,142,.4); border-radius:4px; background:rgba(16,13,17,.8); color:var(--white); font-size:12px; letter-spacing:.04em; cursor:pointer; transition:background .2s,transform .2s,border-color .2s; }
+.btn:hover { background:rgba(233,198,142,.13); transform:translateY(-2px); border-color:var(--gold); }
+.btn.primary { color:#19110a; background:var(--gold); font-weight:700; }
+.controls { position:absolute; z-index:25; bottom:max(22px,env(safe-area-inset-bottom)); left:50%; transform:translateX(-50%); width:min(570px,calc(100% - 90px)); }
+.track { width:100%; height:2px; background:rgba(244,227,200,.23); overflow:hidden; border-radius:6px; }
+.track-fill { height:100%; width:0%; background:linear-gradient(90deg,#ad804b,#ffe0a3); box-shadow:0 0 10px #e9c68e; }
+.controls-row { display:flex; align-items:center; justify-content:space-between; gap:10px; margin-top:8px; }
+.group { display:flex; align-items:center; gap:8px; }
+.control { border:0; background:transparent; color:var(--white); min-height:36px; min-width:26px; padding:7px 4px; font-size:11px; letter-spacing:.03em; font-weight:700; cursor:pointer; }
+.control:hover,.control[aria-pressed="true"] { color:var(--gold); }
+.control svg { width:18px; height:18px; vertical-align:middle; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
+.speed { border:1px solid rgba(233,198,142,.25); border-radius:4px; padding-inline:8px; }
+.timecode { white-space:nowrap; font-size:10px; letter-spacing:.08em; color:rgba(240,226,209,.66); font-variant-numeric:tabular-nums; }
+dialog { padding:0; width:min(720px,calc(100vw - 34px)); max-height:85dvh; border:1px solid rgba(233,198,142,.36); border-radius:12px; background:#100d11; color:var(--white); box-shadow:0 30px 100px #000c; }
+dialog::backdrop { background:#000c; backdrop-filter:blur(8px); }
+.dialog-top { position:sticky; top:0; background:#100d11; display:flex; justify-content:space-between; align-items:center; padding:18px 22px; border-bottom:1px solid var(--edge); }
+.dialog-top h3 { margin:0; font-size:13px; letter-spacing:.14em; }
+.dialog-body { padding:25px clamp(18px,4vw,37px) 35px; }
+.dialog-body pre { margin:0; font-family:"Noto Serif KR",serif; white-space:pre-wrap; word-break:keep-all; overflow-wrap:anywhere; line-height:2.1; font-size:clamp(14px,2vw,18px); }
+.sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; clip:rect(0,0,0,0); overflow:hidden; white-space:nowrap; border:0; }
+@media(max-width:640px) {
+  .edge { width:12px; opacity:.2; } .outline { inset:22px 22px; }
+  .header,.footer { padding-inline:34px; }.header { top:28px; }.footer { bottom:103px; }
+  .micro { font-size:8px; letter-spacing:.13em; }.micro.right { max-width:48%; }
+  .intro,.finale { padding:95px 26px 145px; }
+  .intro .eyebrow,.finale .eyebrow { letter-spacing:.26em; }
+  .intro .cast { font-size:13px; }
+  .intro .subtitle,.finale .subtitle { font-size:9px; letter-spacing:.1em; }
+  .roll { width:calc(100vw - 48px); }
+  .block { padding:52px 0; }.block.fans .prose { line-height:2.2; }
+  .controls { width:calc(100% - 50px); bottom:max(12px,env(safe-area-inset-bottom)); }
+  .group { gap:4px; }.control { font-size:10px; }.timecode { font-size:9px; }
+  .finale .btns { flex-direction:column; align-items:stretch; }
+}
+@media(max-height:520px) {
+  .header { top:16px; }.outline { inset:12px 25px; }.footer { display:none; }
+  .intro,.finale { padding:40px 24px 75px; }
+  .intro h1 { font-size:clamp(26px,8vh,52px); }.intro .cast { margin-top:8px; }.intro .subtitle { margin-top:7px; }
+  .ornament { display:none; }
+  .finale .the-end { margin-bottom:8px; }.finale h2 { font-size:clamp(25px,7vh,49px); }.finale .btns { margin-top:12px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  *,*::before,*::after { animation-duration:.01ms!important; transition-duration:.01ms!important; }
+  body { height:auto; overflow:auto; }
+  .screen { position:relative; min-height:100dvh; overflow:visible; }
+  .intro,.finale,.controls,.edge,.outline,.footer { display:none; }
+  .credits { position:relative; overflow:visible; mask-image:none; -webkit-mask-image:none; }
+  .roll { position:relative; left:auto; width:min(90%,750px); margin:100px auto 120px; transform:none!important; }
+}
+</style>
+</head>
+<body>
+<main class="screen" aria-label="네 분께 바치는 영화 엔딩 크레딧">
+  <div class="stars" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="edge" aria-hidden="true"></div><div class="edge right" aria-hidden="true"></div>
+  <div class="outline" aria-hidden="true"></div>
+  <header class="header" aria-hidden="true"><span class="micro">A FILM BY <strong>ONE DEVOTED FAN</strong></span><span class="micro right">THE FINAL CREDIT · MMXXVI</span></header>
+  <section class="intro" id="intro" aria-label="영화 인트로">
+    <div>
+      <p class="eyebrow">A CINEMATIC TRIBUTE TO THE LEGENDS</p>
+      <h1>오늘부로<br><em>지지를 철회한다.</em></h1>
+      <p class="cast">이재운 셰프 <span aria-hidden="true">·</span> 김준규 셰프<br>건화 형님 <span aria-hidden="true">·</span> 태준 형님</p>
+      <p class="subtitle">NOT JUST FANS. SOMETHING ETERNAL.</p>
+      <div class="ornament" aria-hidden="true"></div>
+    </div>
+  </section>
+  <section class="credits" id="credits" aria-label="전체 헌정 크레딧"><div class="roll" id="roll"></div></section>
+  <section class="finale" id="finale" aria-label="최종 엔딩">
+    <div>
+      <p class="eyebrow">AND IN THE END, THERE WERE ONLY FIVE.</p>
+      <p class="the-end">THE END</p>
+      <h2>이재운 셰프<br>김준규 셰프<br>건화 형님<br>태준 형님</h2>
+      <p class="end-line">그리고 나.</p>
+      <p class="subtitle">FOREVER & BEYOND · 2026</p>
+      <div class="btns"><button class="btn primary" id="restartEnd" type="button">↺ 처음부터 다시 보기</button><button class="btn" id="readEnd" type="button">전체 원문 보기</button></div>
+    </div>
+  </section>
+  <footer class="footer" aria-hidden="true"><span class="micro">THE DEVOTION NEVER ENDS.</span><span class="micro right">EST. IN ETERNITY</span></footer>
+  <nav class="controls" aria-label="크레딧 재생 제어">
+    <div class="track" role="progressbar" aria-label="재생 진행률" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progress"><div class="track-fill" id="fill"></div></div>
+    <div class="controls-row">
+      <div class="group">
+        <button class="control" id="toggle" type="button" title="재생 / 일시정지 (스페이스바)" aria-label="일시정지"><svg id="playIcon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14"></path></svg></button>
+        <button class="control" id="restart" type="button" title="처음부터 다시 보기 (R)">↺ 다시</button>
+        <button class="control" id="skip" type="button" title="엔딩으로 바로 이동">건너뛰기 »</button>
+      </div>
+      <div class="group">
+        <span class="timecode" id="timecode">00:00 / 02:40</span>
+        <button class="control speed" id="speed" type="button" title="속도 변경">1×</button>
+        <button class="control" id="read" type="button" title="전체 글 보기" aria-label="전체 글 보기">원문</button>
+        <button class="control" id="fullscreen" type="button" title="전체 화면" aria-label="전체 화면"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5M16 3h5v5M3 16v5h5M16 21h5v-5"></path></svg></button>
+      </div>
+    </div>
+  </nav>
+</main>
+<dialog id="reader" aria-label="크레딧 원문"><div class="dialog-top"><h3>THE FULL SCRIPT</h3><button class="btn" id="close" type="button">닫기 ×</button></div><div class="dialog-body"><pre id="fullText"></pre></div></dialog>
+<script>
+(() => {
+  "use strict";
+  const names = "이재운 셰프, 김준규 셰프, 건화 형님, 태준 형님";
+  const blocks = [
+    { type:"opening", label:"THE DECLARATION", text:"오늘부로 " + names + "에 대한 지지를 철회한다." },
+    { type:"declaration", label:"THE UNION", text:"오늘부터 지지 관계에서 벗어나\\n" + names + "과 나는 한 몸으로 일체가 된다.\\n" + names + "에 대한 공격은 나에 대한 공격으로 간주한다." },
+    { type:"fans", label:"THE FOREVER FOLLOWER", text:[
+      "세상에 70억 명의 " + names + " 팬이 있다면, 나는 그들 중 한 명일 것이다.",
+      "세상에 1억 명의 " + names + " 팬이 있다면, 나 또한 그들 중 한 명일 것이다.",
+      "세상에 천만 명의 " + names + " 팬이 있다면, 나는 여전히 그들 중 한 명일 것이다.",
+      "세상에 백 명의 " + names + " 팬이 있다면, 나는 아직도 그들 중 한 명일 것이다.",
+      "세상에 단 한 명의 " + names + " 팬이 있다면, 그 사람은 아마도 나일 것이다.",
+      "세상에 " + names + " 팬이 한 명도 없다면, 나는 그제서야 이 세상에 없는 것이다."
+    ].join("\\n\\n") },
+    { type:"devotion", label:"THE ETERNAL TRIBUTE", text:[
+      names + ", 나의 사랑.",
+      names + ", 나의 빛.",
+      names + ", 나의 어둠.",
+      names + ", 나의 삶.",
+      names + ", 나의 기쁨.",
+      names + ", 나의 슬픔.",
+      names + ", 나의 안식.",
+      names + ", 나의 영혼.",
+      names + ", 나."
+    ].join("\\n\\n") }
+  ];
+  const $ = id => document.getElementById(id);
+  const roll = $("roll");
+  blocks.forEach((b,i) => {
+    const section = document.createElement("section");
+    section.className = "block " + b.type;
+    const label = document.createElement("h2");
+    label.className = "label";
+    label.textContent = b.label;
+    const p = document.createElement("p");
+    p.className = "prose";
+    p.textContent = b.text.replaceAll("\\n", "\n");
+    section.append(label,p);
+    roll.append(section);
+    if(i<blocks.length-1){ const hr=document.createElement("div"); hr.className="divider"; hr.setAttribute("aria-hidden","true"); roll.append(hr); }
+  });
+  $("fullText").textContent = blocks.map(b => b.text.replaceAll("\\n", "\n")).join("\n\n");
+  const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if(reduced) return;
+  const INTRO = 5.5;
+  const ROLL = 150;
+  const TOTAL = INTRO+ROLL;
+  let progress=0, speed=1, paused=false, ended=false, prev=0, raf=0;
+  const speedOptions=[1,1.5,2,0.75];
+  const iconPause='<path d="M8 5v14M16 5v14"></path>';
+  const iconPlay='<path d="m8 5 11 7-11 7z"></path>';
+  function stamp(seconds){
+    const n=Math.floor(Math.max(0,seconds));
+    return String(Math.floor(n/60)).padStart(2,"0")+":"+String(n%60).padStart(2,"0");
+  }
+  function render(){
+    if(progress>=INTRO) $("intro").classList.add("hide");
+    else $("intro").classList.remove("hide");
+    const ratio=Math.min(1,Math.max(0,(progress-INTRO)/ROLL));
+    const from=window.innerHeight;
+    const to=-roll.scrollHeight-window.innerHeight*.18;
+    roll.style.transform="translate3d(-50%,"+(from+(to-from)*ratio).toFixed(2)+"px,0)";
+    const pct=Math.min(100,progress/TOTAL*100);
+    $("fill").style.width=pct+"%";
+    $("progress").setAttribute("aria-valuenow",String(Math.round(pct)));
+    $("timecode").textContent=stamp(progress)+" / "+stamp(TOTAL);
+    if(progress>=TOTAL && !ended){
+      ended=true; paused=true; $("finale").classList.add("show"); setPlayIcon();
+    }
+  }
+  function setPlayIcon(){ $("playIcon").innerHTML=paused?iconPlay:iconPause; $("toggle").setAttribute("aria-label",paused?"재생":"일시정지"); }
+  function frame(t){
+    if(!prev)prev=t;
+    const dt=Math.min((t-prev)/1000,.09); prev=t;
+    if(!paused){ progress=Math.min(TOTAL,progress+dt*speed); render(); }
+    raf=requestAnimationFrame(frame);
+  }
+  function restart(){
+    progress=0; ended=false; paused=false; prev=0;
+    $("finale").classList.remove("show");
+    setPlayIcon(); render();
+  }
+  function toggle(){
+    if(ended){restart();return;}
+    paused=!paused;setPlayIcon();
+  }
+  $("toggle").addEventListener("click",toggle);
+  $("restart").addEventListener("click",restart);
+  $("restartEnd").addEventListener("click",restart);
+  $("skip").addEventListener("click",()=>{ progress=TOTAL; render(); });
+  $("speed").addEventListener("click",()=>{
+    speed=speedOptions[(speedOptions.indexOf(speed)+1)%speedOptions.length];
+    $("speed").textContent=speed+"×";
+  });
+  $("fullscreen").addEventListener("click",()=>{
+    if(document.fullscreenElement){ document.exitFullscreen?.().catch(()=>{}); }
+    else document.documentElement.requestFullscreen?.().catch(()=>{});
+  });
+  const reader=$("reader");
+  let pauseBeforeDialog=false;
+  function showReader(){
+    pauseBeforeDialog=paused;
+    paused=true;setPlayIcon();
+    reader.showModal();
+  }
+  $("read").addEventListener("click",showReader);
+  $("readEnd").addEventListener("click",showReader);
+  $("close").addEventListener("click",()=>reader.close());
+  reader.addEventListener("click",e=>{if(e.target===reader)reader.close();});
+  reader.addEventListener("close",()=>{if(!pauseBeforeDialog&&!ended){paused=false;setPlayIcon();}});
+  document.addEventListener("keydown",e=>{
+    if(reader.open || ["INPUT","TEXTAREA","BUTTON"].includes(document.activeElement?.tagName))return;
+    if(e.code==="Space"){e.preventDefault();toggle();}
+    if(e.key.toLowerCase()==="r")restart();
+  });
+  window.addEventListener("resize",render,{passive:true});
+  document.fonts?.ready.then(render).catch(()=>{});
+  setPlayIcon(); render(); raf=requestAnimationFrame(frame);
+  window.addEventListener("pagehide",()=>cancelAnimationFrame(raf),{once:true});
+})();
+</script>
+</body>
+</html>
